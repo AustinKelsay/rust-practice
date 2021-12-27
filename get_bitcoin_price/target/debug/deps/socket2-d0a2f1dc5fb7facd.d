@@ -1,0 +1,11 @@
+/Users/austinkelsay/Desktop/My-projects/rust-practice/get_bitcoin_price/target/debug/deps/socket2-d0a2f1dc5fb7facd.rmeta: /Users/austinkelsay/.cargo/registry/src/github.com-1ecc6299db9ec823/socket2-0.4.2/src/lib.rs /Users/austinkelsay/.cargo/registry/src/github.com-1ecc6299db9ec823/socket2-0.4.2/src/sockaddr.rs /Users/austinkelsay/.cargo/registry/src/github.com-1ecc6299db9ec823/socket2-0.4.2/src/socket.rs /Users/austinkelsay/.cargo/registry/src/github.com-1ecc6299db9ec823/socket2-0.4.2/src/sockref.rs /Users/austinkelsay/.cargo/registry/src/github.com-1ecc6299db9ec823/socket2-0.4.2/src/sys/unix.rs
+
+/Users/austinkelsay/Desktop/My-projects/rust-practice/get_bitcoin_price/target/debug/deps/libsocket2-d0a2f1dc5fb7facd.rlib: /Users/austinkelsay/.cargo/registry/src/github.com-1ecc6299db9ec823/socket2-0.4.2/src/lib.rs /Users/austinkelsay/.cargo/registry/src/github.com-1ecc6299db9ec823/socket2-0.4.2/src/sockaddr.rs /Users/austinkelsay/.cargo/registry/src/github.com-1ecc6299db9ec823/socket2-0.4.2/src/socket.rs /Users/austinkelsay/.cargo/registry/src/github.com-1ecc6299db9ec823/socket2-0.4.2/src/sockref.rs /Users/austinkelsay/.cargo/registry/src/github.com-1ecc6299db9ec823/socket2-0.4.2/src/sys/unix.rs
+
+/Users/austinkelsay/Desktop/My-projects/rust-practice/get_bitcoin_price/target/debug/deps/socket2-d0a2f1dc5fb7facd.d: /Users/austinkelsay/.cargo/registry/src/github.com-1ecc6299db9ec823/socket2-0.4.2/src/lib.rs /Users/austinkelsay/.cargo/registry/src/github.com-1ecc6299db9ec823/socket2-0.4.2/src/sockaddr.rs /Users/austinkelsay/.cargo/registry/src/github.com-1ecc6299db9ec823/socket2-0.4.2/src/socket.rs /Users/austinkelsay/.cargo/registry/src/github.com-1ecc6299db9ec823/socket2-0.4.2/src/sockref.rs /Users/austinkelsay/.cargo/registry/src/github.com-1ecc6299db9ec823/socket2-0.4.2/src/sys/unix.rs
+
+/Users/austinkelsay/.cargo/registry/src/github.com-1ecc6299db9ec823/socket2-0.4.2/src/lib.rs:
+/Users/austinkelsay/.cargo/registry/src/github.com-1ecc6299db9ec823/socket2-0.4.2/src/sockaddr.rs:
+/Users/austinkelsay/.cargo/registry/src/github.com-1ecc6299db9ec823/socket2-0.4.2/src/socket.rs:
+/Users/austinkelsay/.cargo/registry/src/github.com-1ecc6299db9ec823/socket2-0.4.2/src/sockref.rs:
+/Users/austinkelsay/.cargo/registry/src/github.com-1ecc6299db9ec823/socket2-0.4.2/src/sys/unix.rs:
