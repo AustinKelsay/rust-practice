@@ -1,0 +1,9 @@
+/Users/austinkelsay/Desktop/My-projects/rust-practice/get_bitcoin_price/target/debug/deps/futures_channel-c9f9fac829e4c197.rmeta: /Users/austinkelsay/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.18/src/lib.rs /Users/austinkelsay/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.18/src/lock.rs /Users/austinkelsay/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.18/src/mpsc/mod.rs /Users/austinkelsay/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.18/src/mpsc/queue.rs /Users/austinkelsay/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.18/src/oneshot.rs
+
+/Users/austinkelsay/Desktop/My-projects/rust-practice/get_bitcoin_price/target/debug/deps/futures_channel-c9f9fac829e4c197.d: /Users/austinkelsay/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.18/src/lib.rs /Users/austinkelsay/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.18/src/lock.rs /Users/austinkelsay/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.18/src/mpsc/mod.rs /Users/austinkelsay/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.18/src/mpsc/queue.rs /Users/austinkelsay/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.18/src/oneshot.rs
+
+/Users/austinkelsay/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.18/src/lib.rs:
+/Users/austinkelsay/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.18/src/lock.rs:
+/Users/austinkelsay/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.18/src/mpsc/mod.rs:
+/Users/austinkelsay/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.18/src/mpsc/queue.rs:
+/Users/austinkelsay/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.18/src/oneshot.rs:
