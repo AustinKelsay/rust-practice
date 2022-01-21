@@ -1,0 +1,1 @@
+/Users/austinkelsay/Desktop/My-projects/rust-practice/literals_and_operators/target/debug/literals_and_operators: /Users/austinkelsay/Desktop/My-projects/rust-practice/literals_and_operators/src/main.rs
