@@ -1,0 +1,11 @@
+/Users/austinkelsay/Desktop/My-projects/rust-practice/get_bitcoin_price/target/debug/deps/tinyvec-fe20e82d6c3399bb.rmeta: /Users/austinkelsay/.cargo/registry/src/github.com-1ecc6299db9ec823/tinyvec-1.5.1/src/lib.rs /Users/austinkelsay/.cargo/registry/src/github.com-1ecc6299db9ec823/tinyvec-1.5.1/src/array.rs /Users/austinkelsay/.cargo/registry/src/github.com-1ecc6299db9ec823/tinyvec-1.5.1/src/array/generated_impl.rs /Users/austinkelsay/.cargo/registry/src/github.com-1ecc6299db9ec823/tinyvec-1.5.1/src/arrayvec.rs /Users/austinkelsay/.cargo/registry/src/github.com-1ecc6299db9ec823/tinyvec-1.5.1/src/arrayvec_drain.rs /Users/austinkelsay/.cargo/registry/src/github.com-1ecc6299db9ec823/tinyvec-1.5.1/src/slicevec.rs /Users/austinkelsay/.cargo/registry/src/github.com-1ecc6299db9ec823/tinyvec-1.5.1/src/tinyvec.rs
+
+/Users/austinkelsay/Desktop/My-projects/rust-practice/get_bitcoin_price/target/debug/deps/tinyvec-fe20e82d6c3399bb.d: /Users/austinkelsay/.cargo/registry/src/github.com-1ecc6299db9ec823/tinyvec-1.5.1/src/lib.rs /Users/austinkelsay/.cargo/registry/src/github.com-1ecc6299db9ec823/tinyvec-1.5.1/src/array.rs /Users/austinkelsay/.cargo/registry/src/github.com-1ecc6299db9ec823/tinyvec-1.5.1/src/array/generated_impl.rs /Users/austinkelsay/.cargo/registry/src/github.com-1ecc6299db9ec823/tinyvec-1.5.1/src/arrayvec.rs /Users/austinkelsay/.cargo/registry/src/github.com-1ecc6299db9ec823/tinyvec-1.5.1/src/arrayvec_drain.rs /Users/austinkelsay/.cargo/registry/src/github.com-1ecc6299db9ec823/tinyvec-1.5.1/src/slicevec.rs /Users/austinkelsay/.cargo/registry/src/github.com-1ecc6299db9ec823/tinyvec-1.5.1/src/tinyvec.rs
+
+/Users/austinkelsay/.cargo/registry/src/github.com-1ecc6299db9ec823/tinyvec-1.5.1/src/lib.rs:
+/Users/austinkelsay/.cargo/registry/src/github.com-1ecc6299db9ec823/tinyvec-1.5.1/src/array.rs:
+/Users/austinkelsay/.cargo/registry/src/github.com-1ecc6299db9ec823/tinyvec-1.5.1/src/array/generated_impl.rs:
+/Users/austinkelsay/.cargo/registry/src/github.com-1ecc6299db9ec823/tinyvec-1.5.1/src/arrayvec.rs:
+/Users/austinkelsay/.cargo/registry/src/github.com-1ecc6299db9ec823/tinyvec-1.5.1/src/arrayvec_drain.rs:
+/Users/austinkelsay/.cargo/registry/src/github.com-1ecc6299db9ec823/tinyvec-1.5.1/src/slicevec.rs:
+/Users/austinkelsay/.cargo/registry/src/github.com-1ecc6299db9ec823/tinyvec-1.5.1/src/tinyvec.rs:

@@ -1,4 +1,5 @@
 use std::fs;
+use std::collections::HashMap;
 
 fn main() {
     // Grab CLI args
@@ -14,14 +15,48 @@ fn main() {
     let contents = format!("{}\t{}\n", key, value);
     // A result is rusts way of handling errors
     // Since rust cant do 'exceptions' in the language, we use Result to at least see what is the result from the command that crashed our program
-    let write_result = fs::write("test.txt", contents);
-    // Match lets us do a kind of try except but it is not based on errors rather it is based on the result of the command
-    match write_result {
-        Ok(()) => {
-            println!("Successfully wrote to the file");
+    let write_result = fs::write("kv.db", contents);
+
+    let database = Database::spawn().expect("Failed to spawn database");
+}
+
+// Rust is not OOP, it is functional so we dont have classes
+// How we work with class like functionality is to define a struct first that just houses field names/types as KV pairs
+struct Database {
+    map: HashMap<String, String>,
+}
+
+// If we want "methods" in our struct, we need to define them in an impl block
+impl Database {
+    // Result<T, E> is the type used for returning and propagating errors. It is an enum with the variants, Ok(T), representing success and containing a value, and Err(E), representing error and containing an error value.
+    fn spawn() -> Result<Database, std::io::Error> {
+        // Read kv.db file
+        // let contents: String = match std::fs::read_to_string("kv.db") {
+        //     Ok(c) => {
+        //         return c
+        //     }
+        //     Err(e) => {
+        //         println!("Error reading file: {:?}", e);
+        //         return Err(e)
+        //     }
+        // };
+        let mut map = HashMap::new();
+        // This syntax below is equivalent to the above pattern
+        // The question mark is an aknowledgement that the function will return an error if it fails
+        let contents = std::fs::read_to_string("kv.db")?;
+        // Split the contents into lines and iterate
+        for line in contents.lines() {
+            // Split our line into two chunks
+            let mut chunks = line.splitn(2,'\t');
+            let key = chunks.next().expect("No key found");
+            let value = chunks.next().expect("No value found");
+            // Pass ownership of the key and value so we are passing a <String> and not a &str which is just a reference or pointer to that actual value
+            map.insert(key.to_owned(), value.to_owned());
         }
-        Err(e) => {
-            println!("Error writing to file: {:?}", e);
-        }
+        // parse the string
+        // populate our map
+        Ok(Database {
+            map: map,
+        })
     }
 }
