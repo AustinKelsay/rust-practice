@@ -1,4 +1,5 @@
 use std::fs;
+use std::path::Path;
 use std::collections::HashMap;
 
 fn main() {
@@ -15,9 +16,10 @@ fn main() {
     let contents = format!("{}\t{}\n", key, value);
     // A result is rusts way of handling errors
     // Since rust cant do 'exceptions' in the language, we use Result to at least see what is the result from the command that crashed our program
-    let write_result = fs::write("kv.db", contents);
+    fs::write("kv.db", contents);
 
     let database = Database::spawn().expect("Failed to spawn database");
+    database.add_data(key, value)
 }
 
 // Rust is not OOP, it is functional so we dont have classes
@@ -28,6 +30,8 @@ struct Database {
 
 // If we want "methods" in our struct, we need to define them in an impl block
 impl Database {
+    // First check if the kv.db file exists
+    // let db_exists = Path::new("kv.db").exists();
     // Result<T, E> is the type used for returning and propagating errors. It is an enum with the variants, Ok(T), representing success and containing a value, and Err(E), representing error and containing an error value.
     fn spawn() -> Result<Database, std::io::Error> {
         // Read kv.db file
@@ -58,5 +62,10 @@ impl Database {
         Ok(Database {
             map: map,
         })
+    }
+
+    fn add_data(mut self, key: String, value: String) {
+        // Insert the key and value into our map
+        self.map.insert(key, value);
     }
 }
