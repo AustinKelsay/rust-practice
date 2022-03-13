@@ -1,4 +1,4 @@
-use std::fs;
+use std::fs::File;
 use std::path::Path;
 use std::collections::HashMap;
 
@@ -13,13 +13,17 @@ fn main() {
     let value = arguments.next().expect("No value specified");
     println!("The key is '{}', and the value is {}", key, value);
     // Define the format of our output file
-    let contents = format!("{}\t{}\n", key, value);
+    // let contents = format!("{}\t{}\n", key, value);
     // A result is rusts way of handling errors
     // Since rust cant do 'exceptions' in the language, we use Result to at least see what is the result from the command that crashed our program
-    fs::write("kv.db", contents);
+    // fs::write("kv.db", contents);
 
-    let database = Database::spawn().expect("Failed to spawn database");
-    database.add_data(key, value)
+    let mut database = Database::spawn().expect("Failed to spawn database");
+    // in rust any param passed into a func is moved into the func 'passed by value' by default
+    // if you want to pass by refference use & or .clone()
+    database.add_data(key.to_uppercase(), value.clone());
+    database.add_data(key, value);
+    database.flush().unwrap()
 }
 
 // Rust is not OOP, it is functional so we dont have classes
@@ -47,6 +51,9 @@ impl Database {
         let mut map = HashMap::new();
         // This syntax below is equivalent to the above pattern
         // The question mark is an aknowledgement that the function will return an error if it fails
+        if !Path::new("kv.db").exists() {
+            File::create("kv.db")?;
+        }
         let contents = std::fs::read_to_string("kv.db")?;
         // Split the contents into lines and iterate
         for line in contents.lines() {
@@ -64,8 +71,20 @@ impl Database {
         })
     }
 
-    fn add_data(mut self, key: String, value: String) {
+    fn add_data(&mut self, key: String, value: String) {
         // Insert the key and value into our map
         self.map.insert(key, value);
+    }
+
+    fn flush(self) -> std::io::Result<()> {
+        let mut contents = String::new();
+        // SUMMARY: Prefer &str as a function parameter or if you want a read-only view of a string; String when you want to own and mutate a string.
+        for (key, value) in &self.map {
+            contents.push_str(key);
+            contents.push('\t');
+            contents.push_str(value);
+            contents.push('\n')
+        }
+        std::fs::write("kv.db", contents)
     }
 }
